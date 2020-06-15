@@ -1,4 +1,13 @@
-var swiper = new Swiper('.product-slider', {
+import './style.css';
+import Background from './img/background.png';
+
+
+const myBackground = new Image();
+myBackground.src = Background;
+
+document.getElementsByClassName('bg-shape')[0].appendChild(myBackground);
+
+let swiper = new Swiper('.product-slider', {
     spaceBetween: 30,
     effect: 'fade',
     // initialSlide: 2,
@@ -12,9 +21,9 @@ var swiper = new Swiper('.product-slider', {
     // },
     on: {
         init: function(){
-            var index = this.activeIndex;
+            let index = this.activeIndex;
 
-            var target = $('.product-slider__item').eq(index).data('target');
+            let target = $('.product-slider__item').eq(index).data('target');
 
             console.log(target);
 
@@ -26,9 +35,9 @@ var swiper = new Swiper('.product-slider', {
 });
 
 swiper.on('slideChange', function () {
-    var index = this.activeIndex;
+    let index = this.activeIndex;
 
-    var target = $('.product-slider__item').eq(index).data('target');
+    let target = $('.product-slider__item').eq(index).data('target');
 
     console.log(target);
 
