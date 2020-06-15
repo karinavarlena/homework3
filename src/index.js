@@ -1,6 +1,7 @@
 import './style.css';
 import Background from './img/background.png';
-
+import Swiper from 'swiper';
+import $ from 'jquery';
 
 const myBackground = new Image();
 myBackground.src = Background;
