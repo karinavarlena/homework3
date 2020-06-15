@@ -25,8 +25,6 @@ let swiper = new Swiper('.product-slider', {
 
             let target = $('.product-slider__item').eq(index).data('target');
 
-            console.log(target);
-
             $('.product-img__item').removeClass('active');
             $('.product-img__item#'+ target).addClass('active');
         }
@@ -38,8 +36,6 @@ swiper.on('slideChange', function () {
     let index = this.activeIndex;
 
     let target = $('.product-slider__item').eq(index).data('target');
-
-    console.log(target);
 
     $('.product-img__item').removeClass('active');
     $('.product-img__item#'+ target).addClass('active');
