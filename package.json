@@ -36,6 +36,6 @@
   },
   "dependencies": {
     "jquery": "^3.5.1",
-    "swiper": "^5.4.3"
+    "swiper": "^6.5.1"
   }
 }
